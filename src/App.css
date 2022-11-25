@@ -435,7 +435,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
   margin-bottom: 24px;
 }
-
+/* 
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #ffffff -5.91%, #4A2FBD 111.58%);
@@ -444,7 +444,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 150%;
   height: 0;
   transition: 0.4s ease-in-out;
-}
+} */
 
 .proj-imgbx:hover::before {
   height: 100%;

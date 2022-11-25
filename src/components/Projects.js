@@ -1,5 +1,7 @@
 
-
+import cartPic from "../images/cart.jpg"
+import memoryPic from "../images/Memory.jpg"
+import loadingGif from "../images/loading.gif"
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 
@@ -10,19 +12,20 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: "https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+      title: "Functional e-commerce cart",
+      description: "One of my first more advanced JavaScript projects",
+      imgUrl: cartPic,
+      link: "https://github.com/JuanBiljoen/e-commerce-Shopping-cart"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: "https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+      title: "Memory game",
+      description: "a Card memory game built with React (build phase)",
+      imgUrl: memoryPic,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: "https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+      title: "Next Project",
+      description: "Loading...",
+      imgUrl: loadingGif,
     },
 
   
