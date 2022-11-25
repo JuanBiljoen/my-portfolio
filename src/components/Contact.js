@@ -31,19 +31,19 @@ export const Contact = () => {
   return (
 
 
-   
+
     <div className="connect" id="connect" >
-             <h2>Let's connect!</h2>
-                <p>Feel free to contact me via the form below.</p>
+      <h2>Let's connect!</h2>
+      <p>Feel free to contact me via the form below.</p>
       <form className="form" ref={form} onSubmit={sendEmail}>
         <label>Name</label>
-        <input placeholder="name" type="text" name="user_name" />
+        <input type="text" name="user_name" />
         <label>Email</label>
-        <input placeholder="email address" type="email" name="user_email" />
+        <input type="email" name="user_email" />
         <label>Message</label>
-        <textarea placeholder="message" className="user-message" name="message" />
+        <textarea className="user-message" name="message" />
         <input className="send-button" type="submit" value="Send" />
       </form>
-  </div>
+    </div>
   );
 };

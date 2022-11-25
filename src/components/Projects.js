@@ -1,4 +1,3 @@
-
 import cartPic from "../images/cart.jpg"
 import memoryPic from "../images/memory.jpg"
 import loadingGif from "../images/loading.gif"
@@ -21,6 +20,7 @@ export const Projects = () => {
       title: "Memory game",
       description: "a Card memory game built with React (build phase)",
       imgUrl: memoryPic,
+      link: "https://github.com/JuanBiljoen/memory-game"
     },
     {
       title: "Next Project",
@@ -28,7 +28,7 @@ export const Projects = () => {
       imgUrl: loadingGif,
     },
 
-  
+
   ];
 
   return (
@@ -38,10 +38,10 @@ export const Projects = () => {
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <p>Here are a couple of projects I have worked on thus far.</p>
-                
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <h2>Projects</h2>
+                  <p>Here are a couple of projects I have worked on thus far.</p>
+
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>
@@ -51,16 +51,16 @@ export const Projects = () => {
                               <ProjectCard
                                 key={index}
                                 {...project}
-                                />
+                              />
                             )
                           })
                         }
                       </Row>
                     </Tab.Pane>
-                  
+
                   </Tab.Content>
-               
-              </div>}
+
+                </div>}
             </TrackVisibility>
           </Col>
         </Row>

@@ -212,16 +212,6 @@ nav.navbar .navbar-toggler:focus {
   box-shadow: none;
 }
 
-/* nav.navbar .navbar-toggler-icon {
-  width: 24px;
-  height: 17px;
-  background-image: none;
-  position: relative;
-  border-bottom: 2px solid #fff;
-  transition: all 300ms linear;
-  top: -2px;
-  background-color: aqua;
-} */
 
 nav.navbar .navbar-toggler-icon:focus {
   border-bottom: 2px solid #fff;
@@ -261,11 +251,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
-
 /************ Banner Css ************/
-
-
-
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
@@ -435,16 +421,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
   margin-bottom: 24px;
 }
-/* 
-.proj-imgbx::before {
-  content: "";
-  background: linear-gradient(90.21deg, #ffffff -5.91%, #4A2FBD 111.58%);
-  opacity: 0.35;
-  position: absolute;
-  width: 150%;
-  height: 0;
-  transition: 0.4s ease-in-out;
-} */
 
 .proj-imgbx:hover::before {
   height: 100%;
@@ -459,6 +435,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+  color: whitesmoke;
 }
 
 .proj-imgbx:hover .proj-txtx {
@@ -472,13 +449,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.1em;
 }
-
-/* .proj-txtx span {
-  font-style: italic;
-  font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 0.8px;
-} */
 
 
 .project-image {
@@ -495,7 +465,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* about */
 .about {
-
   color: #B8B8B8;
   font-size: 18px;
   letter-spacing: 0.8px;
@@ -504,11 +473,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   width: 56%;
 
+}
+
+@keyframes mymove {
+  from {
+    background-color: red;
   }
-  
-  @keyframes mymove {
-    from {background-color: red;}
-    to {background-color: blue;}
+
+  to {
+    background-color: blue;
+  }
 
 }
 
@@ -546,16 +520,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   animation: updown 3s linear infinite;
 }
 
-.resume-button{
+.resume-button {
   background-color: grey;
   height: 25px;
   width: 30%;
   border-radius: 8px;
   color: black;
-  cursor:grab;
+  cursor: grab;
   transition-duration: 0.4s;
   margin-bottom: 20px;
-  margin-top: 15px ;
+  margin-top: 15px;
 
 }
 
@@ -596,63 +570,65 @@ form {
   align-items: center;
   text-align: center;
 }
-  input {
-    width: 100%;
-    height: 35px;
-    padding: 7px;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid rgb(220, 220, 220);
-  }
-  
-  textarea {
-    max-width: 100%;
-    min-width: 100%;
-    width: 100%;
-    max-height: 100px;
-    min-height: 100px;
-    padding: 7px;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid rgb(220, 220, 220);
-    }
-  
-  label {
-    margin-top: 1rem;
-  }
-  input[type="submit"] {
-    margin-top: 2rem;
-    cursor: pointer;
-    background: rgb(249, 105, 14);
-    color: white;
-    border: none;
-    width: 40%;
-    margin-bottom: 3rem;
-    transition-duration: 0.4s;
-  }
 
-  input[type="submit"]:hover {
-    background-color: rgb(249, 105, 14);
-    color: black;
-  }
-  
-.connect{
-  background-color:rgba(217, 217, 217, 0.1);
+input {
+  width: 100%;
+  height: 35px;
+  padding: 7px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(220, 220, 220);
 }
 
-  .connect h2{
-    font-size: 45px;
-    font-weight: 700;
-    text-align: center;
-    color: #fff;
-  }
+textarea {
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  max-height: 100px;
+  min-height: 100px;
+  padding: 7px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(220, 220, 220);
+}
 
-  .connect p {
-    color: #B8B8B8;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    margin: 14px auto 30px auto;
-    text-align: center;
-    width: 56%;
-  }
+label {
+  margin-top: 1rem;
+}
+
+input[type="submit"] {
+  margin-top: 2rem;
+  cursor: pointer;
+  background: rgb(249, 105, 14);
+  color: white;
+  border: none;
+  width: 40%;
+  margin-bottom: 3rem;
+  transition-duration: 0.4s;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(249, 105, 14);
+  color: black;
+}
+
+.connect {
+  background-color: rgba(217, 217, 217, 0.1);
+}
+
+.connect h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+
+.connect p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 56%;
+}
