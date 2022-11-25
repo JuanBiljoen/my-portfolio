@@ -1,6 +1,6 @@
 
 import cartPic from "../images/cart.jpg"
-import memoryPic from "../images/Memory.jpg"
+import memoryPic from "../images/memory.jpg"
 import loadingGif from "../images/loading.gif"
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
