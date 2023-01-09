@@ -44,5 +44,7 @@ Start the server
 
 **Client:** React, Css, 
 
+##Note 
 
+This app is not mobile ready
 
